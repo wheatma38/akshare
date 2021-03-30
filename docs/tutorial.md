@@ -1,10 +1,10 @@
-# [AkShare](https://github.com/jindaxiang/akshare) 快速入门
+# [AKShare](https://github.com/jindaxiang/akshare) 快速入门
 
 ## 查看数据
 
-具体函数使用详情, 请查看 [AkShare 文档](https://akshare.readthedocs.io/) 每个接口的示例代码
+具体函数使用详情, 请查看 [AKShare 文档](https://akshare.readthedocs.io/) 每个接口的示例代码
 
-[AkShare](https://github.com/jindaxiang/akshare) 数据接口一览表
+[AKShare](https://github.com/jindaxiang/akshare) 数据接口一览表
 
 ```
  # 交易所期货数据
@@ -180,7 +180,11 @@
  "fx_swap_quote"  # 市场行情-债券市场行情-人民币外汇远掉报价
  "fx_pair_quote"  # 市场行情-债券市场行情-外币对即期报价
  # 能源-碳排放权
- "energy_carbon"  # 北京市碳排放权电子交易平台-北京市碳排放权公开交易行情
+ "energy_carbon_bj"  # 碳排放权-北京
+ "energy_carbon_sz"  # 碳排放权-深圳
+ "energy_carbon_eu"  # 碳排放权-国际
+ "energy_carbon_hb"  # 碳排放权-湖北
+ "energy_carbon_gz"  # 碳排放权-广州
  # 生活成本
  "cost_living"  # 获取世界各大城市生活成本数据
  # 商品现货价格指数
@@ -543,6 +547,7 @@
  # 股票市场总貌
  "stock_szse_summary"  # 深圳证券交易所-市场总貌
  "stock_sse_summary"  # 上海证券交易所-股票数据总貌
+ "stock_sse_deal_daily"  # 上海证券交易所-每日股票情况
  # 美股港股目标价
  "stock_js_price"  # 美股港股目标价
  # 券商业绩月报
@@ -692,6 +697,23 @@
  # 融资融券
  "stock_margin_sse"  # 上海证券交易所-融资融券汇总
  "stock_margin_detail_sse"  # 上海证券交易所-融资融券详情
+ # 基金评级
+ "fund_rating_all"  # 基金评级-基金评级总汇
+ "fund_rating_sh"  # 基金评级-上海证券评级
+ "fund_rating_zs"  # 基金评级-招商证券评级
+ "fund_rating_ja"  # 基金评级-济安金信评级
+ # 基金经理
+ "fund_manager"  # 基金经理-基金经理大全
+ # 盈利预测
+ "stock_profit_forecast"  # 盈利预测
+ # 中美国债收益率
+ "bond_zh_us_rate"  # 中美国债收益率
+ # 分红配送
+ "stock_em_fhps"  # 分红配送
+ # 业绩快报
+ "stock_em_yjkb"  # 业绩快报
+ # 概念板块
+ "stock_board_concept_cons_ths"  # 同花顺
 ```
 
 ## 案例演示

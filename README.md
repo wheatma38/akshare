@@ -1,11 +1,11 @@
-![](https://github.com/jindaxiang/akshare/blob/master/example/images/AkShare_logo.jpg)
+![](https://github.com/jindaxiang/akshare/blob/master/example/images/AKShare_logo.jpg)
 
-[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/akshare.svg)](https://pypi.org/project/akshare/) 
-[![PyPI](https://img.shields.io/pypi/v/akshare.svg)](https://pypi.org/project/akshare/) 
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/akshare.svg)](https://pypi.org/project/akshare/)
+[![PyPI](https://img.shields.io/pypi/v/akshare.svg)](https://pypi.org/project/akshare/)
 [![Downloads](https://pepy.tech/badge/akshare)](https://pepy.tech/project/akshare)
 [![Documentation Status](https://readthedocs.org/projects/akshare/badge/?version=latest)](https://akshare.readthedocs.io/zh_CN/latest/?badge=latest)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![akshare](https://img.shields.io/badge/Data%20Science-AkShare-green)](https://github.com/jindaxiang/akshare)
+[![akshare](https://img.shields.io/badge/Data%20Science-AKShare-green)](https://github.com/jindaxiang/akshare)
 [![Actions Status](https://github.com/jindaxiang/akshare/workflows/build/badge.svg)](https://github.com/jindaxiang/akshare/actions)
 [![MIT Licence](https://camo.githubusercontent.com/14a9abb7e83098f2949f26d2190e04fb1bd52c06/68747470733a2f2f626c61636b2e72656164746865646f63732e696f2f656e2f737461626c652f5f7374617469632f6c6963656e73652e737667)](https://github.com/jindaxiang/akshare/blob/master/LICENSE)
 [![](https://img.shields.io/github/forks/jindaxiang/akshare)](https://github.com/jindaxiang/akshare)
@@ -15,14 +15,13 @@
 
 ## Overview
 
-[AkShare](https://github.com/jindaxiang/akshare) requires Python(64 bit) 3.7 or greater, aims to make fetch financial data as convenient as possible.
+[AKShare](https://github.com/jindaxiang/akshare) requires Python(64 bit) 3.7 or greater, aims to make fetch financial data as convenient as possible.
 
 **Write less, get more!**
 
 - Documentation: [中文文档](https://akshare.readthedocs.io/zh_CN/latest/)
-- Documentation: [中文文档-国内加速访问](https://akshare-4gize6tod19f2d2e-1252952517.tcloudbaseapp.com/index.html)
 
-# ![](https://github.com/jindaxiang/akshare/blob/master/example/images/AkShare.svg)
+# ![](https://github.com/jindaxiang/akshare/blob/master/example/images/AKShare.svg)
 
 ## Installation
 
@@ -100,7 +99,7 @@ Code
 
 ```python
 import akshare as ak
-import mplfinance as mpf  # Please install mplfinance
+import mplfinance as mpf  # Please install mplfinance as follows: pip install mplfinance
 
 stock_us_daily_df = ak.stock_us_daily(symbol="AAPL", adjust="qfq")
 stock_us_daily_df = stock_us_daily_df[["open", "high", "low", "close", "volume"]]
@@ -122,10 +121,10 @@ Pay attention to **数据科学实战** WeChat Official Accounts to get the [AkS
     <img src="https://github.com/jindaxiang/akshare/blob/master/example/images/ds.png">
 </div>
 
-Application to add **AkShare-官方** QQ group and talk about [AkShare](https://github.com/jindaxiang/akshare) issues, QQ group number: 772100249
+Application to add **AkShare-官方** QQ group and talk about [AkShare](https://github.com/jindaxiang/akshare) issues, QQ group number: 512720929
 
 <div align=center>
-    <a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=nT-L_hfVVFz6XOu2l_d-xQqq-228-eOc&jump_from=webapi"><img border="0" src="https://jfds-1252952517.cos.ap-chengdu.myqcloud.com/akshare/readme/qrcode/qr_code_772100249.png" alt="AkShare-官方" title="AkShare-官方"></a>
+    <a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=lW9uQSc9HkKBmfRg6I25YIMjco_ZzTuN&jump_from=webapi"><img border="0" src="https://jfds-1252952517.cos.ap-chengdu.myqcloud.com/akshare/readme/qrcode/qr_code_512720929.png" alt="AkShare-官方" title="AkShare-官方"></a>
 </div>
 
 ## Features

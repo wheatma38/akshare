@@ -1242,18 +1242,72 @@ amac_manager_cancelled_info # 中国证券投资基金业协会-信息公示-诚
 0.8.22: fix: fix stock_zh_a_daily interface
 0.8.23: fix: fix covid_19_dxy interface
 0.8.24: fix: fix fund_em_value_estimation interface
+0.8.25: fix: fix stock_zh_index_daily_tx interface
+0.8.26: fix: fix stock_hk_daily interface
+0.8.27: fix: fix get_dce_rank_table interface
+0.8.28: fix: fix stock_em_analyst_rank interface
+0.8.29: add: add fund_rating interface
+0.8.30: add: add fund_manager interface
+0.8.31: fix: fix stock_zh_a_minute interface
+0.8.32: fix: fix get_dce_rank_table interface
+0.8.33: add: add stock_profit_forecast interface
+0.8.34: fix: fix index_investing_global interface
+0.8.35: add: add bond_zh_us_rate interface
+0.8.36: add: add stock_em_fhps interface
+0.8.37: add: add stock_em_yjkb interface
+0.8.38: fix: fix get_czce_daily interface
+0.8.39: add: add stock_board_concept_cons_ths interface
+0.8.40: fix: fix stock_board_concept_cons_ths interface
+0.8.41: fix: fix energy_carbon_bj interface
+0.8.42: fix: fix stock_zh_a_daily interface
+0.8.43: fix: fix stock_em_yjyg interface
+0.8.44: fix: fix stock_em_comment interface
+0.8.45: add: add stock_sse_deal_daily interface
+0.8.46: fix: fix stock_board_concept_cons_ths interface
+0.8.47: add: add stock_board_concept_info_ths interface
+0.8.48: fix: fix fund_rating_sh fund_rating_zs fund_rating_ja interface
 """
 
-__version__ = "0.8.24"
+__version__ = "0.8.48"
 __author__ = "Albert King"
 
 import sys
 
 if sys.version_info < (3, 7):
-    print(f"AkShare {__version__} requires Python 3.7+")
+    print(f"AKShare {__version__} requires Python 3.7+")
     sys.exit(1)
 
 del sys
+
+"""
+同花顺-概念板块
+"""
+from akshare.stock_feature.stock_board_ths import stock_board_concept_cons_ths, stock_board_concept_name_ths, stock_board_concept_info_ths
+
+"""
+分红配送
+"""
+from akshare.stock_feature.stock_em_fhps import stock_em_fhps
+
+"""
+中美国债收益率
+"""
+from akshare.bond.bond_em import bond_zh_us_rate
+
+"""
+盈利预测
+"""
+from akshare.stock_fundamental.stock_profit_forecast import stock_profit_forecast
+
+"""
+基金经理
+"""
+from akshare.fund.fund_manager import fund_manager
+
+"""
+基金评级
+"""
+from akshare.fund.fund_rating import fund_rating_sh, fund_rating_zs, fund_rating_ja, fund_rating_all
 
 """
 融资融券数据
@@ -1522,7 +1576,7 @@ from akshare.stock.stock_js_us import stock_js_price
 """
 stock-summary
 """
-from akshare.stock.stock_summary import stock_sse_summary, stock_szse_summary
+from akshare.stock.stock_summary import stock_sse_summary, stock_szse_summary, stock_sse_deal_daily
 
 """
 股票-机构推荐池
@@ -1603,7 +1657,7 @@ from akshare.hf.hf_sp500 import hf_sp_500
 """
 stock_em_yjyg
 """
-from akshare.stock_feature.stock_em_yjyg import stock_em_yjyg, stock_em_yysj
+from akshare.stock_feature.stock_em_yjyg import stock_em_yjyg, stock_em_yysj, stock_em_yjkb
 
 """
 stock
